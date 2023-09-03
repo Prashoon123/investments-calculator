@@ -1,38 +1,84 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App__header {
+  text-align: center;
+  width: 100%;
+  margin: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__body {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  /* align-items: center; */
+}
+
+.App__input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.App__input > label {
+  margin-bottom: 5px;
+}
+
+.App__input > input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.App__input > input:focus {
+  border: 1px solid #000;
+}
+
+.App__input > input[type="submit"] {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+.App__input > input[type="submit"]:hover {
+  border: 1px solid #000;
+}
+
+.App__results {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.App__title {
+  margin: 10px;
+}
+
+.App__result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.App__resultValue {
+  margin-left: 50px;
+}
+
+.App__chart {
+  width: 100%;
+  margin-top: 10px;
 }
